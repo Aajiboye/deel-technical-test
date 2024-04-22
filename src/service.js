@@ -90,8 +90,12 @@ class JobService {
 
 class AdminService {
   static async bestProfession(from, to) {
-    const startDate = new Date('2024-01-01');
-    const endDate = new Date('2024-04-22');
+    try {
+      const startDate = new Date(from);
+      const endDate = new Date(to);  
+    } catch (error) {
+      throw new ValidationError("Enter a valid start and end date");
+    }
 
 return Profile.findAll({
   include: [

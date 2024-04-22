@@ -95,4 +95,7 @@ It would be great for example if you'd write some unit test / simple frontend de
 
 When you have finished the assignment, zip your repo (make sure to include .git folder) and send us the zip.
 
+## TO DOs
+Configure Redis-Lock to manage concurrency with 'creditBalance' function. This ensures when a credit transaction is taking place, the function is locked until the acquirer releases lock.
+
 Thank you and good luck! 🙏
